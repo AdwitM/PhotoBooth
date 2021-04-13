@@ -112,8 +112,16 @@
         height: 240px;
     }
 
+    #jacket{
+        width : 50px;
+        height : 50px;
+        padding-bottom: 5px;
+        margin: 1px;
+    }
+
     #canvas {
         display: none;
+        /* padding-bottom: 50px; */
     }
 
     .camera {
@@ -122,8 +130,10 @@
     }
 
     .output {
+        padding-top: 3px;
         width: 340px;
         display: inline-block;
+        border: 1px solid black;
     }
 
     #startbutton {
@@ -146,20 +156,22 @@
         text-align: center;
     }
     </style>
-    <title>My Favorite Sport</title>
+    <title>StepOne Photobooth</title>
 </head>
 
 <body>
     <div class="contentarea">
         <h1>
-            Using Javascript to capture Photo
+            StepOne Photobooth
         </h1>
         <div class="camera">
             <video id="video">Video stream not available.</video>
         </div>
         <div><button id="startbutton">Take photo</button></div>
         <canvas id="canvas"></canvas>
+
         <div class="output">
+            <img id="jacket" src="https://i.imgur.com/RRpMmRA.png">
             <img id="photo" alt="The screen capture will appear in this box.">
         </div>
     </div>
